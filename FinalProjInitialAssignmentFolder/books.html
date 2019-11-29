@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comparing Tanzania & US :: Books</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ronald Kiefer">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--  Viewport Meta Tag for readable viewing on smart phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  *************   link to css   ********* -->
+    <link href="TanzaniaWorkCond.css" rel="stylesheet" />
+    <!--  *************   code for internet explorer  *****  -->
+    <!--[if lt  EI 9]>
+		<script
+		src="http://html5shim.googlecode.com/svn/trunk/html5.
+		js">
+		</script>
+	<![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    
+    <script>
+       $(document).ready(function(){
+       $('form').validate();
+       });
+    </script>
+	
+    
+    <script>
+    function validateForm(){
+        if(document.forms[0].myFName.value == ""){
+        alert("Please enter your name.");
+        return false;
+        }// end if
+        if(document.forms[0].myPNumber.value == ""){
+        alert("Please enter your phone number.");
+        return false;
+        }// end if
+        alert("hello");
+        return true;
+        
+    }
+    
+    
+    
+    </script>
+</head>
+<body id="bodybackground">
+<div id="wrapper">
+    
+    <header>
+        
+	   <!--  ***********  Heading Goes Here  ********  -->
+	<div>
+		<h1 class="headingFeature">Books Page</h1>
+	</div>
+
+	
+	
+	</header>
+    
+    
+    
+	<nav>
+    <!--  ******  This is the navagation section  *****  -->
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="usa1.html">USA-1</a></li>
+		<li><a href="usa2.html">USA-2</a></li>
+		<li><a href="tanzania1.html">Tanz-1</a></li>
+		<li><a href="tanzania2.html">Tanz-2</a></li>
+		<li><a href="books.html">Books</a></li>
+		</ul>
+    
+    
+    
+    </nav>
+	<main>
+	<!--  ***********  Two paragraphs of content  ******  -->
+	    
+        
+        
+        
+        <div>
+        Contact Us to Order a Book<span class="margbot">&nbsp;&nbsp;&nbsp;(Required information is marked with an asterisk(*))</span><br><br>
+            
+        <form name="myBookContact" method="post" id="myBookContact" action="http://apollo1.occc.edu/genericFormHandler.php" onsubmit="return validateForm();">    
+            
+        <label for="myFName">*Name:</label>
+		<input type="text" id="myFName" name="myFName" tabindex="1" accesskey="N"><br> 
+            
+        <label for="myEmail">*Email:</label>
+		<input type="email" name="myEmail" id="myEmail" accesskey="E" tabindex="2" required="required"><br>
+        
+        <label for="myPNumber">*Phone:</label>
+		<input type="tel" id="myPNumber" name="myPNumber" tabindex="3" accesskey="H" class="margbot"> 
+            
+        <br>Where do you live?<br>
+        <input type="radio" name="wherelive" id="liveus" value="us" accesskey="D" tabindex="4">
+            the US<br>
+        <input type="radio" name="wherelive" id="liveother" value="other" accesskey="A" tabindex="5" class="margbot"> other<br>  
+        
+        <select size="1" name="bookchoice" id="bookchoice" accesskey="S" tabindex="6" class="margbot">
+            <option>What books are you interested in?</option>
+            <option value="All About Tanzania">All About Tanzania</option>
+            <option value="All About Dar es Salaam">All About Dat es Salaam</option>
+        </select><br>
+        
+        <span>Do you want it extra fast?</span> 
+
+        <input type="checkbox" name="wantexp" id="wantexp" value="yes" accesskey="C" tabindex="7" class="required"><br>
+        
+        <input type="submit" name="mySubmit" id="mySubmit" accesskey="B" tabindex="8" class="printHidden" value="Submit Form">
+			
+		<input type="reset" name="myReset" id="myReset" accesskey="R" tabindex="9" class="printHidden" value="Clear Form">
+            
+        </form>
+        <br><br>
+			
+        </div>
+        
+    
+	
+	
+	
+	</main>
+	<footer>
+    <div>
+        
+        <a href="mailto:2fixelectronics777@gmail.com">Contact: 2fixelectronics777@gmail.com</a><br>
+        <a href="mailto:ronald.kiefer@my.occc.edu">Alternate Contact: ronald.kiefer@my.occc.edu</a><br>
+        
+        <small><i>Disclaimer: Oklahoma City Community College does not necessarily endorse the content or the respective links of this web page.</i></small>
+        <script>
+            document.write("<p> This document was last modified: ");
+            document.write(document.lastModified);
+            document.write("<p>");
+        </script><br><br>
+    </div>
+    
+    
+    
+    </footer>
+	
+
+
+    
+</div>
+	
+
+
+
+</body>
+</html>
