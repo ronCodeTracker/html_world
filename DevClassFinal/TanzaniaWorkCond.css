@@ -1,0 +1,263 @@
+/*    Name: Ronald Kiefer     */
+
+
+
+
+
+
+/*
+	Project Name: Final Project Comparint USA with Tanzania
+	Author:  Ronald Kiefer
+	Version  
+	Last Changed: November 28, 2019 Thursday 10:12 PM
+
+
+
+    Name: Roanld Kiefer
+    Final Project
+	
+	Colors:   White: (background) #FFF
+	          Black: (font) #000
+			        
+			  Blue: (background) #608FD7
+	          another Blue: (nav buttons) #1F4983
+			                     
+			  Yellow:  (navigation) #EEDD9F
+	                     
+	
+*/
+
+
+/*   Home Page heading with background from photoshop by Adobe  */
+
+
+#HomeHeader1 { padding-top: 100px;
+              padding-bottom: 100px;
+              text-align: center; 
+		    }
+
+
+#HomeHeader2 {    background-color: #EEDD9F;
+                  padding-top: 25px;
+				  padding-bottom: 10px; }
+
+#HomeHeader3 { max-width: 100%;
+             height: auto;  }
+
+/*    wrapper for the home page   */
+
+
+#wrapperHome { margin-left: auto;
+               margin-right: auto;
+		       width: 90%; 
+		       background-color: #608FD7;
+               
+		     }
+
+
+
+/*   end Home Page Heading formatting  */
+
+
+
+
+/*    wrapper */
+
+#wrapper {  margin-left: auto;
+            margin-right: auto; 
+			width: 80%; 
+            font-size: 1.3em;
+            background-color: #FFF; }
+
+/*  end wrapper   */
+
+
+/*   background for 5 pages  */
+
+#bodybackground {background-image: url(images/background.jpg);}
+
+
+/*    Header for 5 pages   */
+
+
+/*   heading formatting for pages   */
+
+.headingFeature {  
+     background-repeat: no-repeat;
+     height: 100px;
+     padding-top: 90px;
+	 padding-bottom: 40px; 
+	 text-align: center;
+	 background-color: #608FD7;
+	  }
+
+
+
+
+/*  Header for usa1   */
+#pictureT3 {  background-image: url(images/obama2.png);  }
+#featureShowB {display: block;}
+#featureShowB2 {display: none;}
+
+
+/*  Header for tanzania1 page  */
+#pictureT1 {  background-image: url(images/lion3.jpg);
+              background-size: 6em 7em; }
+#featureShow { display: block; }
+#featureShow2 { display: none; }
+
+/*  Header for tanzania2 page   */
+#pictureT2 {  background-image: url(images/Dar.jpg);
+              background-size: 8em  6em;    }
+#featureShowA {display: block;}
+#featureShowA2 {display: none;}
+
+/*   nav formatting   */
+
+nav ul { list-style-type: none;
+           }
+
+
+nav a {text-decoration: none;
+       border: 2px outset #000;
+	   background-color: #1F4983; 
+	   text-align: center;
+	   padding: 5px;
+	   color: #FFF;
+	   display: block;
+	   margin-bottom: 10px;}
+
+nav {  font-weight: bold;
+       float: left;
+	   width: 160px;
+	   padding: 0px 5px 0px 5px;
+	   background-color: #EEDD9F;
+	   margin-top: 100px; }
+	   
+nav a:hover {  background-color: white; 
+               color: #1F4983;}
+	   
+/*   end of nav formatting    */
+
+
+/*      main content    */
+
+main h2 {  text-align: center;}
+
+
+main div { margin-left: 15em; 
+           padding-right: 3em;     }
+
+
+
+
+/*   footer formatting     */
+
+
+
+footer  { text-align: center;
+          font-size: 14px;  }
+
+footer a {  text-decoration: none; }
+
+
+/*     form formatting    */
+
+
+form label {
+	    width: 100px; 
+        
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+
+
+form input { margin-top: 10px; 
+                  display: inline; } 
+
+
+
+
+.margbot { margin-bottom: 20px; 
+          }
+
+#mySubmit { margin: 20px;}
+
+#myReset { margin: 20px;}
+
+
+
+/*   Home Page Formatting    */
+
+#mainFeature { font-size: 1.4em; 
+               color: white;
+               margin-bottom: 5em;     }
+
+
+
+
+
+
+
+/*    ***************   tablet   *********************  */
+
+@media only all and (min-width: 768px) and (max-width: 1024px)  {
+
+
+/*  ******************  header picture toggle out **************** */
+
+	#featureShow { display: none; }
+	#featureShow2 { display: block; }
+
+	#featureShowA {display: none;}
+	#featureShowA2 { display: block; }
+
+	#featureShowB {display: none;}
+	#featureShowB2 { display: block; }
+
+
+	/* **********  change navigation from vert to horizontal ******* */
+
+	nav { float: none;
+	      width: auto;  }
+
+	nav li { display: inline-block; }
+
+	main div { margin-left: 3em; }
+
+}
+
+
+@media only all and (max-width: 768px)  {
+
+
+/*  ******************  header picture toggle out **************** */
+
+	#featureShow { display: none; }
+	#featureShow2 { display: block; }
+
+	#featureShowA {display: none;}
+	#featureShowA2 { display: block; }
+
+	#featureShowB {display: none;}
+	#featureShowB2 { display: block; }
+
+	/* **********  change navigation from vert to horizontal ******* */
+
+	nav { float: none;
+	      width: auto;  }
+
+	nav li { display: inline-block; }
+	
+	main div { margin-left: 2em; }
+
+}
+
+@media print {
+    
+    
+    nav { display: none;}
+    
+    
+    
+}
